@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="fastjson-2.0.2.graal">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/fastjson-2.0.2.graal.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/fastjson-2.0.2.graal-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

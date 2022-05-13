@@ -1,10 +1,13 @@
 package component.button;
 
 import component.frame.InitFrame;
+import component.frame.MainFrame;
 import listener.actionlistener.NextMainActionListener;
 import listener.actionlistener.OpenFileMainActionListener;
 import listener.actionlistener.PreMainActionListener;
 import listener.actionlistener.StartMainActionListener;
+import listener.mouselistener.SongListsMainMouseListener;
+import main.Main;
 
 import javax.swing.*;
 
@@ -43,6 +46,20 @@ public class MainButton {
         JButton jButton = new JButton();
 
         jButton.addActionListener(new OpenFileMainActionListener());
+
+        InitFrame.mainFrame.add(jButton);
+
+        return jButton;
+    }
+
+    public JButton setSongListsMainButton(){
+        JButton jButton = new JButton();
+
+        jButton.addMouseListener(new SongListsMainMouseListener());
+
+        jButton.setBounds(MainFrame.MainFrameWidth-100,
+                MainFrame.MainFrameHeight-100,
+                50,50);
 
         InitFrame.mainFrame.add(jButton);
 

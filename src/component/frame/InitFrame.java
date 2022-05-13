@@ -17,4 +17,9 @@ public class InitFrame {
         MainFrame mainFrame = new MainFrame();
         InitFrame.mainFrame = mainFrame.setLoginFrame();
     }
+
+    public void setVisible(){
+        loginFrame.setVisible(true);
+        mainFrame.setVisible(false);
+    }
 }

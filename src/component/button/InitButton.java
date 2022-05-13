@@ -8,23 +8,26 @@ public class InitButton {
     public static JButton LoginButton;
 
     public static JButton startMainButton;
-    public static JButton nextButton;
-    public static JButton preButton;
-    public static JButton openFileButton;
+    public static JButton nextMainButton;
+    public static JButton preMainButton;
+    public static JButton openFileMainButton;
+    public static JButton songListsMainButton;
 
 
 
     public void init(){
         LoginButton loginButton = new LoginButton();
         signInLoginButton = loginButton.setSignInLoginButton();
-        signUpLoginButton = loginButton.setSignUpLoginButton();
         InitButton.LoginButton = loginButton.setLoginButton();
+        signUpLoginButton = loginButton.setSignUpLoginButton();
+
 
         MainButton mainButton = new MainButton();
         startMainButton = mainButton.setStartMainButton();
-        nextButton = mainButton.setNextMainButton();
-        preButton = mainButton.setPreMainButton();
-        openFileButton = mainButton.setOpenFileMainButton();
+        nextMainButton = mainButton.setNextMainButton();
+        preMainButton = mainButton.setPreMainButton();
+        openFileMainButton = mainButton.setOpenFileMainButton();
+        songListsMainButton = mainButton.setSongListsMainButton();
 
     }
 }

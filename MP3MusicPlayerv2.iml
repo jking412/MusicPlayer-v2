@@ -10,5 +10,18 @@
     <orderEntry type="library" name="mysql-connector-java-5.1.37-bin" level="project" />
     <orderEntry type="library" name="mysql-connector-java-8.0.28" level="project" />
     <orderEntry type="library" name="snakeyaml-1.12" level="project" />
+    <orderEntry type="library" name="reactive-streams-1.0.3" level="project" />
+    <orderEntry type="library" name="commons-cli-1.4" level="project" />
+    <orderEntry type="library" name="fastjson-2.0.2.graal" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/fastjson-2.0.2.graal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="gson-2.9.0" level="project" />
   </component>
 </module>

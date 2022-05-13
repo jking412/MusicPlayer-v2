@@ -15,8 +15,6 @@ public class LoginFrame {
 
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        jFrame.setVisible(true);
-
         return jFrame;
     }
 }
