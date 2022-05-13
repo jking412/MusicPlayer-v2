@@ -1,9 +1,7 @@
 package component.label;
 
-import com.mysql.cj.log.Log;
 import component.frame.InitFrame;
 import component.frame.LoginFrame;
-import component.panel.InitPanel;
 
 import javax.swing.*;
 import java.awt.*;

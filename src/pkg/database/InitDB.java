@@ -1,11 +1,9 @@
-package database;
+package pkg.database;
 
 import pkg.YamlReader;
 
-import java.sql.*;
-
-import static database.Crud.createSongListsTable;
-import static database.Crud.createUsersTable;
+import static pkg.database.Crud.createSongListsTable;
+import static pkg.database.Crud.createUsersTable;
 
 public class InitDB {
     public static  String port;

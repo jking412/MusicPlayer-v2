@@ -1,7 +1,7 @@
 package musicplayer;
 
 import component.InitComponent;
-import database.InitDB;
+import pkg.database.InitDB;
 import pkg.YamlReader;
 
 public class Init {

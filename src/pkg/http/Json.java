@@ -1,4 +1,4 @@
-package http;
+package pkg.http;
 
 
 import com.google.gson.Gson;

@@ -2,7 +2,6 @@ package component.textfield;
 
 import component.frame.InitFrame;
 import component.frame.LoginFrame;
-import component.panel.InitPanel;
 
 import javax.swing.*;
 

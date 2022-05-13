@@ -1,11 +1,11 @@
-package database;
+package pkg.database;
 
 import javafx.util.Pair;
 
 import java.sql.*;
 import java.util.ArrayList;
 
-import static database.InitDB.*;
+import static pkg.database.InitDB.*;
 
 public class Crud {
     static Connection connection;
@@ -176,6 +176,18 @@ public class Crud {
         startServer();
         String sql = "INSERT INTO users (user,password)" +
                 " VALUES (\""+user+"\",\""+password+"\");";
+        try {
+            statement.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        closeServer();
+    }
+
+    public static void createSongItem(String user,String song){
+        startServer();
+        String sql = "INSERT INTO songlists (user,song)" +
+                " VALUES (\""+user+"\",\""+song+"\");";
         try {
             statement.executeUpdate(sql);
         } catch (SQLException e) {

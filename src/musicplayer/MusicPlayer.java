@@ -1,8 +1,5 @@
 package musicplayer;
 
-import database.InitDB;
-import pkg.YamlReader;
-
 import javax.swing.*;
 
 public class MusicPlayer {

@@ -2,9 +2,8 @@ package component.list;
 
 import component.frame.InitFrame;
 import component.frame.MainFrame;
-import database.Crud;
+import pkg.database.Crud;
 import javafx.util.Pair;
-import main.Main;
 import pkg.User;
 
 import javax.swing.*;
@@ -12,6 +11,7 @@ import java.util.ArrayList;
 
 public class MainList {
     public static boolean flag;
+    public static ArrayList<String> arrayData = new ArrayList<>();
 
     public JList<String> setMainList(){
         JList<String> jList = new JList<>();
@@ -22,7 +22,6 @@ public class MainList {
                 MainFrame.MainFrameHeight-100);
 
         if(!User.user.isEmpty()){
-                ArrayList<String> arrayData = new ArrayList<>();
                 ArrayList<Pair<String,String>> arrayList = Crud.selectSongLists();
                 for(int i = 0 ; i < arrayList.size() ; i++){
                     if(arrayList.get(i).equals(User.user)){

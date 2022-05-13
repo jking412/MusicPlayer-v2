@@ -1,4 +1,4 @@
-package http;
+package pkg.http;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,6 +1,5 @@
 package component.frame;
 
-import component.panel.InitPanel;
 
 import javax.swing.*;
 

@@ -3,9 +3,8 @@ package listener.actionlistener;
 import component.label.InitLabel;
 import component.passwordfield.InitPasswordField;
 import component.textfield.InitTextField;
-import database.Crud;
+import pkg.database.Crud;
 import javafx.util.Pair;
-import musicplayer.Init;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
