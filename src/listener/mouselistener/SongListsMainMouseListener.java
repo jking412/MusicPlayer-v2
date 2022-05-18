@@ -32,6 +32,7 @@ public class SongListsMainMouseListener implements MouseListener {
             InitList.mainList.setVisible(true);
             MainList.flag = true;
         }
+
     }
 
     @Override

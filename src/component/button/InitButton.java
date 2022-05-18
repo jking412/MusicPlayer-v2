@@ -13,6 +13,8 @@ public class InitButton {
     public static JButton openFileMainButton;
     public static JButton songListsMainButton;
 
+    public static JButton idButton;
+
 
 
     public void init(){
@@ -28,6 +30,9 @@ public class InitButton {
         preMainButton = mainButton.setPreMainButton();
         openFileMainButton = mainButton.setOpenFileMainButton();
         songListsMainButton = mainButton.setSongListsMainButton();
+
+        IdButton idButton = new IdButton();
+        InitButton.idButton = idButton.setIdButton();
 
     }
 }

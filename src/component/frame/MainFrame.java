@@ -13,8 +13,6 @@ public class MainFrame {
 
         jFrame.setBounds(50,30,MainFrameWidth,MainFrameHeight);
 
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
         jFrame.setVisible(false);
 
         return jFrame;

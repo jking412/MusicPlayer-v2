@@ -1,7 +1,7 @@
 package test;
 
 public class Test2 {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
     }
 }

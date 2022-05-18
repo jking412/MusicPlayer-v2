@@ -2,11 +2,13 @@ package component.list;
 
 import component.frame.InitFrame;
 import component.frame.MainFrame;
-import pkg.database.Crud;
 import javafx.util.Pair;
+import listener.actionlistener.MainListSelectionListener;
 import pkg.User;
+import pkg.database.Crud;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 
 public class MainList {
@@ -16,10 +18,10 @@ public class MainList {
     public JList<String> setMainList(){
         JList<String> jList = new JList<>();
 
-        jList.setBounds(MainFrame.MainFrameWidth*3/4,
-                0,
-                MainFrame.MainFrameWidth/4,
-                MainFrame.MainFrameHeight-100);
+        jList.setBounds(MainFrame.MainFrameWidth*6/7,
+                100,
+                MainFrame.MainFrameWidth/7,
+                MainFrame.MainFrameHeight-300);
 
         if(!User.user.isEmpty()){
                 ArrayList<Pair<String,String>> arrayList = Crud.selectSongLists();
@@ -36,6 +38,12 @@ public class MainList {
 
                 InitList.mainList.setListData(strings);
         }
+
+        jList.addListSelectionListener(new MainListSelectionListener());
+
+        Font font = new Font("宋体",Font.PLAIN,30);
+
+        jList.setFont(font);
 
         jList.setVisible(false);
 

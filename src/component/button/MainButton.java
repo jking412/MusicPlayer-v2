@@ -7,15 +7,22 @@ import listener.actionlistener.OpenFileMainActionListener;
 import listener.actionlistener.PreMainActionListener;
 import listener.actionlistener.StartMainActionListener;
 import listener.mouselistener.SongListsMainMouseListener;
-import main.Main;
 
 import javax.swing.*;
 
 public class MainButton {
+    public static String fileName;
+
     public JButton setStartMainButton(){
         JButton jButton = new JButton();
 
+        jButton.setText("开始");
+
         jButton.addActionListener(new StartMainActionListener());
+
+        jButton.setBounds(MainFrame.MainFrameWidth/2-200,
+                MainFrame.MainFrameHeight-150,
+                80,80);
 
         InitFrame.mainFrame.add(jButton);
 
@@ -23,7 +30,11 @@ public class MainButton {
     }
 
     public JButton setNextMainButton(){
-        JButton jButton = new JButton();
+        JButton jButton = new JButton("下一首");
+
+        jButton.setBounds(MainFrame.MainFrameWidth/2,
+                MainFrame.MainFrameHeight-150,
+                80,80);
 
         jButton.addActionListener(new NextMainActionListener());
 
@@ -33,7 +44,11 @@ public class MainButton {
     }
 
     public JButton setPreMainButton(){
-        JButton jButton = new JButton();
+        JButton jButton = new JButton("上一首");
+
+        jButton.setBounds(MainFrame.MainFrameWidth/2-400,
+                MainFrame.MainFrameHeight-150,
+                80,80);
 
         jButton.addActionListener(new PreMainActionListener());
 
@@ -43,7 +58,11 @@ public class MainButton {
     }
 
     public JButton setOpenFileMainButton(){
-        JButton jButton = new JButton();
+        JButton jButton = new JButton("导入歌曲");
+
+        jButton.setBounds(MainFrame.MainFrameWidth-200,
+                MainFrame.MainFrameHeight-150,
+                80,80);
 
         jButton.addActionListener(new OpenFileMainActionListener());
 
@@ -53,13 +72,13 @@ public class MainButton {
     }
 
     public JButton setSongListsMainButton(){
-        JButton jButton = new JButton();
+        JButton jButton = new JButton("歌曲列表");
 
         jButton.addMouseListener(new SongListsMainMouseListener());
 
         jButton.setBounds(MainFrame.MainFrameWidth-100,
-                MainFrame.MainFrameHeight-100,
-                50,50);
+                MainFrame.MainFrameHeight-150,
+                80,80);
 
         InitFrame.mainFrame.add(jButton);
 

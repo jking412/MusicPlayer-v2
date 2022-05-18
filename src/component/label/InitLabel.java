@@ -10,6 +10,8 @@ public class InitLabel {
 
     public static JLabel backgroundMainLabel;
 
+    public static JLabel idLabel;
+
     public void init(){
         LoginLabel loginLabel = new LoginLabel();
         accountLoginLabel = loginLabel.setAccountLoginLabel();
@@ -19,5 +21,12 @@ public class InitLabel {
 
         MainLabel mainLabel = new MainLabel();
         backgroundMainLabel = mainLabel.setBackgroundMainLabel();
+
+        IdLabel idLabel = new IdLabel();
+        InitLabel.idLabel = idLabel.setIdLabel();
+
+
+
+
     }
 }
