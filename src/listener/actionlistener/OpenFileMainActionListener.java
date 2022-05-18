@@ -2,6 +2,7 @@ package listener.actionlistener;
 
 import component.button.MainButton;
 import component.frame.InitFrame;
+import component.list.InitList;
 import component.list.MainList;
 import pkg.AudioPlayer;
 
@@ -27,5 +28,12 @@ public class OpenFileMainActionListener implements ActionListener {
 
         int index = fileDialog.getFile().indexOf('.');
         MainList.arrayData.add(fileDialog.getFile().substring(0,index));
+
+        String[] strings = new String[MainList.arrayData.size()];
+
+        for(int i = 0 ; i < MainList.arrayData.size() ; i++){
+            strings[i] = MainList.arrayData.get(i);
+        }
+        InitList.mainList.setListData(strings);
     }
 }

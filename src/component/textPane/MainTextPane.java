@@ -6,6 +6,7 @@ import component.frame.MainFrame;
 import javax.swing.*;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
+import java.awt.*;
 
 public class MainTextPane {
     public JTextPane setMainTextPane(){
@@ -22,7 +23,13 @@ public class MainTextPane {
 
         StyleConstants.setFontSize(simpleAttributeSet,20);
 
+        StyleConstants.setForeground(simpleAttributeSet, Color.WHITE);
+
         jTextPane.setCharacterAttributes(simpleAttributeSet,false);
+
+//        jTextPane.setBorder(BorderFactory.createLineBorder(Color.WHITE));
+
+        jTextPane.setOpaque(false);
 
         return jTextPane;
     }

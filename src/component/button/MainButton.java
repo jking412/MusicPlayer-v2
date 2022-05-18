@@ -2,13 +2,10 @@ package component.button;
 
 import component.frame.InitFrame;
 import component.frame.MainFrame;
-import listener.actionlistener.NextMainActionListener;
-import listener.actionlistener.OpenFileMainActionListener;
-import listener.actionlistener.PreMainActionListener;
-import listener.actionlistener.StartMainActionListener;
-import listener.mouselistener.SongListsMainMouseListener;
+import listener.actionlistener.*;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class MainButton {
     public static String fileName;
@@ -19,6 +16,12 @@ public class MainButton {
         jButton.setText("开始");
 
         jButton.addActionListener(new StartMainActionListener());
+
+        jButton.setForeground(Color.WHITE);
+
+        jButton.setContentAreaFilled(false);
+
+        jButton.setBorder(BorderFactory.createLineBorder(Color.WHITE));
 
         jButton.setBounds(MainFrame.MainFrameWidth/2-200,
                 MainFrame.MainFrameHeight-150,
@@ -38,6 +41,12 @@ public class MainButton {
 
         jButton.addActionListener(new NextMainActionListener());
 
+        jButton.setForeground(Color.WHITE);
+
+        jButton.setBorder(BorderFactory.createLineBorder(Color.WHITE));
+
+        jButton.setContentAreaFilled(false);
+
         InitFrame.mainFrame.add(jButton);
 
         return jButton;
@@ -51,6 +60,12 @@ public class MainButton {
                 80,80);
 
         jButton.addActionListener(new PreMainActionListener());
+
+        jButton.setBorder(BorderFactory.createLineBorder(Color.WHITE));
+
+        jButton.setForeground(Color.WHITE);
+
+        jButton.setContentAreaFilled(false);
 
         InitFrame.mainFrame.add(jButton);
 
@@ -66,6 +81,12 @@ public class MainButton {
 
         jButton.addActionListener(new OpenFileMainActionListener());
 
+        jButton.setForeground(Color.WHITE);
+
+        jButton.setContentAreaFilled(false);
+
+        jButton.setBorder(BorderFactory.createLineBorder(Color.WHITE));
+
         InitFrame.mainFrame.add(jButton);
 
         return jButton;
@@ -74,7 +95,13 @@ public class MainButton {
     public JButton setSongListsMainButton(){
         JButton jButton = new JButton("歌曲列表");
 
-        jButton.addMouseListener(new SongListsMainMouseListener());
+        jButton.addActionListener(new SongListsMainActionListener());
+
+        jButton.setForeground(Color.WHITE);
+
+        jButton.setBorder(BorderFactory.createLineBorder(Color.WHITE));
+
+        jButton.setContentAreaFilled(false);
 
         jButton.setBounds(MainFrame.MainFrameWidth-100,
                 MainFrame.MainFrameHeight-150,

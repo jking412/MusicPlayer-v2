@@ -45,6 +45,10 @@ public class MainList {
 
         jList.setFont(font);
 
+        jList.setOpaque(false);
+
+        jList.setBorder(BorderFactory.createLineBorder(Color.WHITE));
+
         jList.setVisible(false);
 
         InitFrame.mainFrame.add(jList);

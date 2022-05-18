@@ -1,5 +1,6 @@
 package listener.actionlistener;
 
+import component.button.InitButton;
 import component.list.InitList;
 import pkg.AudioPlayer;
 
@@ -19,6 +20,7 @@ public class MainListSelectionListener implements ListSelectionListener {
                 AudioPlayer.setAudioPlayURL(AudioPlayer.musicLists.get(i));
                 AudioPlayer.play();
                 AudioPlayer.flag = true;
+                InitButton.startMainButton.setText("暂停");
                 break;
             }
         }
